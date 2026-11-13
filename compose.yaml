@@ -1,0 +1,44 @@
+name: y2k-headless
+services:
+  database:
+    image: mariadb:11.4
+    environment:
+      MARIADB_DATABASE: wordpress
+      MARIADB_USER: wordpress
+      MARIADB_PASSWORD: ${DB_PASSWORD:?Run npm run wp:setup first}
+      MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:?Run npm run wp:setup first}
+    volumes:
+      - database:/var/lib/mysql
+    healthcheck:
+      test: [CMD, healthcheck.sh, --connect, --innodb_initialized]
+      interval: 5s
+      retries: 20
+  wordpress:
+    image: wordpress:php8.3-apache
+    ports: ["127.0.0.1:8081:80"]
+    environment: &wp-environment
+      WORDPRESS_DB_HOST: database
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: ${DB_PASSWORD}
+      WORDPRESS_DB_NAME: wordpress
+      ACF_PRO_LICENSE: ${ACF_PRO_LICENSE:-}
+      WORDPRESS_CONFIG_EXTRA: |
+        define('WP_ENVIRONMENT_TYPE', 'local');
+        if (getenv('ACF_PRO_LICENSE')) {
+          define('ACF_PRO_LICENSE', getenv('ACF_PRO_LICENSE'));
+        }
+    volumes: &wp-volumes
+      - wordpress:/var/www/html
+      - ./wordpress/y2k-headless:/var/www/html/wp-content/plugins/y2k-headless:ro
+    depends_on:
+      database:
+        condition: service_healthy
+  cli:
+    image: wordpress:cli-php8.3
+    user: "33:33"
+    environment: *wp-environment
+    volumes: *wp-volumes
+    depends_on: [wordpress]
+volumes:
+  database:
+  wordpress:

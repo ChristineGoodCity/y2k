@@ -1,0 +1,798 @@
+{
+  "key": "group_y2k_page_builder",
+  "title": "Page builder",
+  "active": true,
+  "show_in_rest": true,
+  "menu_order": -10,
+  "fields": [
+    {
+      "key": "field_page_builder",
+      "label": "Sections",
+      "name": "page_builder",
+      "aria-label": "",
+      "type": "flexible_content",
+      "menu_order": 1,
+      "instructions": "Add sections and drag their headers to reorder. Edit all content here, then Publish or Update to see it on the website.",
+      "required": false,
+      "id": "",
+      "class": "",
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "button_label": "Add section",
+      "layouts": [
+        {
+          "key": "layout_builder_intro",
+          "name": "intro",
+          "label": "Intro",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_builder_intro_number",
+              "label": "Number",
+              "name": "number",
+              "aria-label": "",
+              "type": "text",
+              "menu_order": 0,
+              "instructions": "",
+              "required": false,
+              "id": "",
+              "class": "",
+              "conditional_logic": false,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "rows": 3,
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "ID": 0
+            },
+            {
+              "key": "field_builder_intro_label",
+              "label": "Label",
+              "name": "label",
+              "aria-label": "",
+              "type": "text",
+              "menu_order": 1,
+              "instructions": "",
+              "required": false,
+              "id": "",
+              "class": "",
+              "conditional_logic": false,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "rows": 3,
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "ID": 0
+            },
+            {
+              "key": "field_builder_intro_heading",
+              "label": "Heading",
+              "name": "heading",
+              "aria-label": "",
+              "type": "text",
+              "menu_order": 2,
+              "instructions": "",
+              "required": false,
+              "id": "",
+              "class": "",
+              "conditional_logic": false,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "rows": 3,
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "ID": 0
+            },
+            {
+              "key": "field_builder_intro_description",
+              "label": "Description",
+              "name": "description",
+              "aria-label": "",
+              "type": "textarea",
+              "menu_order": 3,
+              "instructions": "",
+              "required": false,
+              "id": "",
+              "class": "",
+              "conditional_logic": false,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "rows": 3,
+              "default_value": "",
+              "new_lines": "",
+              "maxlength": "",
+              "placeholder": "",
+              "ID": 0
+            },
+            {
+              "key": "field_builder_intro_tags",
+              "label": "Tags",
+              "name": "tags",
+              "aria-label": "",
+              "type": "textarea",
+              "menu_order": 4,
+              "instructions": "One tag per line.",
+              "required": false,
+              "id": "",
+              "class": "",
+              "conditional_logic": false,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "rows": 4,
+              "default_value": "",
+              "new_lines": "",
+              "maxlength": "",
+              "placeholder": "",
+              "ID": 0
+            },
+            {
+              "key": "field_builder_intro_anchor",
+              "label": "Anchor",
+              "name": "anchor",
+              "aria-label": "",
+              "type": "text",
+              "menu_order": 5,
+              "instructions": "",
+              "required": false,
+              "id": "",
+              "class": "",
+              "conditional_logic": false,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "rows": 3,
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "ID": 0
+            },
+            {
+              "key": "field_builder_intro_collector_enabled",
+              "label": "Show collector card",
+              "name": "collector_enabled",
+              "aria-label": "",
+              "type": "true_false",
+              "menu_order": 6,
+              "instructions": "",
+              "required": false,
+              "id": "",
+              "class": "",
+              "conditional_logic": false,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": 1,
+              "rows": 4,
+              "message": "",
+              "ui": 0,
+              "ui_on_text": "",
+              "ui_off_text": "",
+              "ID": 0
+            },
+            {
+              "key": "field_builder_intro_collector_brand",
+              "label": "Card Brand",
+              "name": "collector_brand",
+              "aria-label": "",
+              "type": "text",
+              "menu_order": 7,
+              "instructions": "",
+              "required": false,
+              "id": "",
+              "class": "",
+              "conditional_logic": false,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "Y2K",
+              "rows": 4,
+              "maxlength": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "ID": 0
+            },
+            {
+              "key": "field_builder_intro_collector_title",
+              "label": "Card Title",
+              "name": "collector_title",
+              "aria-label": "",
+              "type": "text",
+              "menu_order": 8,
+              "instructions": "",
+              "required": false,
+              "id": "",
+              "class": "",
+              "conditional_logic": false,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "Digital collector",
+              "rows": 4,
+              "maxlength": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "ID": 0
+            },
+            {
+              "key": "field_builder_intro_collector_motto",
+              "label": "Card Motto",
+              "name": "collector_motto",
+              "aria-label": "",
+              "type": "textarea",
+              "menu_order": 9,
+              "instructions": "",
+              "required": false,
+              "id": "",
+              "class": "",
+              "conditional_logic": false,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "Good people\nBrighter times\nSame dreams\nNew world",
+              "rows": 4,
+              "new_lines": "",
+              "maxlength": "",
+              "placeholder": "",
+              "ID": 0
+            },
+            {
+              "key": "field_builder_intro_collector_number",
+              "label": "Card Number",
+              "name": "collector_number",
+              "aria-label": "",
+              "type": "text",
+              "menu_order": 10,
+              "instructions": "",
+              "required": false,
+              "id": "",
+              "class": "",
+              "conditional_logic": false,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "No. 00012000",
+              "rows": 4,
+              "maxlength": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "ID": 0
+            },
+            {
+              "key": "field_builder_intro_collector_footer",
+              "label": "Card Footer",
+              "name": "collector_footer",
+              "aria-label": "",
+              "type": "textarea",
+              "menu_order": 11,
+              "instructions": "",
+              "required": false,
+              "id": "",
+              "class": "",
+              "conditional_logic": false,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "Est. 2000\nFor a brighter tomorrow",
+              "rows": 4,
+              "new_lines": "",
+              "maxlength": "",
+              "placeholder": "",
+              "ID": 0
+            },
+            {
+              "key": "field_builder_intro_collector_anchor",
+              "label": "Card Anchor",
+              "name": "collector_anchor",
+              "aria-label": "",
+              "type": "text",
+              "menu_order": 12,
+              "instructions": "",
+              "required": false,
+              "id": "",
+              "class": "",
+              "conditional_logic": false,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "rows": 4,
+              "maxlength": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "ID": 0
+            },
+            {
+              "key": "field_builder_intro_title",
+              "label": "Title",
+              "name": "title",
+              "aria-label": "",
+              "type": "textarea",
+              "menu_order": 13,
+              "instructions": "Text beside the 3D model. Use a new line to control wrapping.",
+              "required": false,
+              "id": "",
+              "class": "",
+              "conditional_logic": false,
+              "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "Same dreams\nNew world",
+              "rows": 2,
+              "new_lines": "",
+              "maxlength": "",
+              "placeholder": "",
+              "ID": 0
+            },
+            {
+              "key": "field_builder_intro_model",
+              "label": "3D model",
+              "name": "model",
+              "aria-label": "",
+              "type": "file",
+              "menu_order": 14,
+              "instructions": "Upload or select a GLB 3D model.",
+              "required": false,
+              "id": "",
+              "class": "",
+              "conditional_logic": false,
+              "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "rows": 2,
+              "maxlength": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "return_format": "url",
+              "library": "all",
+              "mime_types": "glb",
+              "min_size": 0,
+              "max_size": 0,
+              "ID": 0
+            },
+            {
+              "key": "field_builder_intro_model_alt",
+              "label": "3D model description",
+              "name": "model_alt",
+              "aria-label": "",
+              "type": "text",
+              "menu_order": 15,
+              "instructions": "Accessible description of the model.",
+              "required": false,
+              "id": "",
+              "class": "",
+              "conditional_logic": false,
+              "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "Interactive pink heart with an orbiting ring",
+              "rows": 2,
+              "maxlength": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "ID": 0
+            },
+            {
+              "key": "field_builder_intro_sublabel",
+              "label": "Section sublabel",
+              "name": "sublabel",
+              "aria-label": "",
+              "type": "text",
+              "menu_order": 16,
+              "instructions": "Small caption on the right of the section header. Leave blank to hide.",
+              "required": false,
+              "id": "",
+              "class": "",
+              "conditional_logic": false,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "ID": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        {
+          "key": "layout_builder_collection",
+          "name": "collection",
+          "label": "Collection",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_builder_collection_number",
+              "label": "Number",
+              "name": "number",
+              "aria-label": "",
+              "type": "text",
+              "menu_order": 0,
+              "instructions": "",
+              "required": false,
+              "id": "",
+              "class": "",
+              "conditional_logic": false,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": 2,
+              "maxlength": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "ID": 0
+            },
+            {
+              "key": "field_builder_collection_label",
+              "label": "Label",
+              "name": "label",
+              "aria-label": "",
+              "type": "text",
+              "menu_order": 1,
+              "instructions": "",
+              "required": false,
+              "id": "",
+              "class": "",
+              "conditional_logic": false,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "collection",
+              "maxlength": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "ID": 0
+            },
+            {
+              "key": "field_builder_collection_anchor",
+              "label": "Anchor",
+              "name": "anchor",
+              "aria-label": "",
+              "type": "text",
+              "menu_order": 2,
+              "instructions": "",
+              "required": false,
+              "id": "",
+              "class": "",
+              "conditional_logic": false,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "collection",
+              "maxlength": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "ID": 0
+            },
+            {
+              "key": "field_builder_collection_sublabel",
+              "label": "Section sublabel",
+              "name": "sublabel",
+              "aria-label": "",
+              "type": "text",
+              "menu_order": 3,
+              "instructions": "Small caption on the right of the section header. Leave blank to hide.",
+              "required": false,
+              "id": "",
+              "class": "",
+              "conditional_logic": false,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "Icons live on",
+              "maxlength": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "ID": 0
+            },
+            {
+              "key": "field_builder_collection_cards",
+              "name": "cards",
+              "label": "Cards",
+              "type": "repeater",
+              "layout": "block",
+              "button_label": "Add card",
+              "collapsed": "field_builder_collection_card_name",
+              "sub_fields": [
+                {
+                  "key": "field_builder_collection_card_name",
+                  "label": "Name",
+                  "name": "name",
+                  "aria-label": "",
+                  "type": "text",
+                  "menu_order": 0,
+                  "instructions": "",
+                  "required": false,
+                  "id": "",
+                  "class": "",
+                  "conditional_logic": false,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "maxlength": "",
+                  "placeholder": "",
+                  "prepend": "",
+                  "append": "",
+                  "ID": 0
+                },
+                {
+                  "key": "field_builder_collection_card_model",
+                  "label": "GLB file",
+                  "name": "model",
+                  "aria-label": "",
+                  "type": "file",
+                  "menu_order": 1,
+                  "instructions": "",
+                  "required": false,
+                  "id": "",
+                  "class": "",
+                  "conditional_logic": false,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "return_format": "url",
+                  "library": "all",
+                  "mime_types": "glb",
+                  "min_size": 0,
+                  "max_size": 0,
+                  "ID": 0
+                },
+                {
+                  "key": "field_builder_collection_card_angle",
+                  "label": "Horizontal angle (degrees)",
+                  "name": "angle",
+                  "aria-label": "",
+                  "type": "number",
+                  "menu_order": 2,
+                  "instructions": "Rotate left or right around the model.",
+                  "required": false,
+                  "id": "",
+                  "class": "",
+                  "conditional_logic": false,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": 0,
+                  "step": "any",
+                  "min": 0,
+                  "max": 360,
+                  "placeholder": "",
+                  "prepend": "",
+                  "append": "",
+                  "ID": 0
+                },
+                {
+                  "key": "field_builder_collection_card_tilt",
+                  "label": "Vertical angle (degrees)",
+                  "name": "tilt",
+                  "aria-label": "",
+                  "type": "number",
+                  "menu_order": 3,
+                  "instructions": "0 = above, 90 = eye level, 180 = below.",
+                  "required": false,
+                  "id": "",
+                  "class": "",
+                  "conditional_logic": false,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": 75,
+                  "step": "any",
+                  "min": 0,
+                  "max": 180,
+                  "placeholder": "",
+                  "prepend": "",
+                  "append": "",
+                  "ID": 0
+                },
+                {
+                  "key": "field_builder_collection_card_distance",
+                  "label": "Camera distance (%)",
+                  "name": "distance",
+                  "aria-label": "",
+                  "type": "number",
+                  "menu_order": 4,
+                  "instructions": "Smaller = closer/larger. Larger = farther/smaller. Default: 110%.",
+                  "required": false,
+                  "id": "",
+                  "class": "",
+                  "conditional_logic": false,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": 110,
+                  "step": "any",
+                  "min": 1,
+                  "max": "",
+                  "placeholder": "",
+                  "prepend": "",
+                  "append": "",
+                  "ID": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "layout_builder_gallery",
+          "name": "gallery",
+          "label": "Gallery",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_builder_gallery_number",
+              "name": "number",
+              "label": "Number",
+              "type": "text",
+              "default_value": "3"
+            },
+            {
+              "key": "field_builder_gallery_label",
+              "name": "label",
+              "label": "Label",
+              "type": "text",
+              "default_value": "gallery"
+            },
+            {
+              "key": "field_builder_gallery_anchor",
+              "name": "anchor",
+              "label": "Anchor",
+              "type": "text",
+              "default_value": "gallery"
+            },
+            {
+              "key": "field_builder_gallery_sublabel",
+              "name": "sublabel",
+              "label": "Section sublabel",
+              "type": "text"
+            },
+            {
+              "key": "field_builder_gallery_cards",
+              "name": "cards",
+              "label": "Cards",
+              "type": "repeater",
+              "layout": "block",
+              "button_label": "Add image",
+              "sub_fields": [
+                {
+                  "key": "field_builder_gallery_image",
+                  "name": "image",
+                  "label": "Image URL",
+                  "type": "text",
+                  "instructions": "Local path or image URL."
+                },
+                {
+                  "key": "field_builder_gallery_title",
+                  "name": "title",
+                  "label": "Title",
+                  "type": "text"
+                },
+                {
+                  "key": "field_builder_gallery_alt",
+                  "name": "alt",
+                  "label": "Image description",
+                  "type": "text"
+                },
+                {
+                  "key": "field_builder_gallery_width",
+                  "name": "width",
+                  "label": "Image width",
+                  "type": "number",
+                  "min": 1,
+                  "default_value": 800
+                },
+                {
+                  "key": "field_builder_gallery_height",
+                  "name": "height",
+                  "label": "Image height",
+                  "type": "number",
+                  "min": 1,
+                  "default_value": 600
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "min": "",
+      "max": "",
+      "ID": 0
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "page"
+      }
+    ]
+  ]
+}
