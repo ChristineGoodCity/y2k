@@ -63,3 +63,18 @@ ACF field groups used by the frontend have **Show in REST API** enabled. Page co
 ACF layout fields match React section props directly (for example `heading` and `cards`). `sections.tsx` selects the typed component by `acf_fc_layout`. The loader validates fields and normalizes model URLs; camera formatting lives in Collection. Existing installations run `scripts/simplify-builder-fields.php` once through setup to rename fields while preserving saved content.
 
 `setup-site-settings.php` installs the database-managed ACF options page and Page settings group once. Their existing keys and option storage are preserved; subsequent setup runs leave admin changes intact. The runtime plugin only handles editor behavior, model uploads, site-data delivery.
+
+## Standalone Vercel preview
+
+The saved preview in `src/data/preview.json` renders with the same components as WordPress. Without `WORDPRESS_GRAPHQL_URL`, the app uses this snapshot automatically. Set `CONTENT_SOURCE=snapshot` to force it, or `CONTENT_SOURCE=wordpress` to require the live CMS.
+
+To refresh the preview after editing WordPress (Node 22.18+):
+
+```sh
+npm run preview:export
+CONTENT_SOURCE=snapshot npm run build
+```
+
+The exporter reads published, unprotected pages and navigation, reuses byte-identical files already in `public/` and copies only distinct WordPress uploads into `public/preview-assets/`, and validates referenced local files. It replaces the snapshot only after a successful export. Existing assets in `public/` (gallery images, models, textures, viewer scripts, and environments) are also required.
+
+Commit the generated JSON and assets with the code, then redeploy Vercel. No WordPress service or credentials are needed for snapshot mode. Changes in WordPress do not reach this preview until you export and redeploy again. Keep `WORDPRESS_GRAPHQL_URL` in `.env.local` for normal local editing.

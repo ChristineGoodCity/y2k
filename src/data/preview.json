@@ -1,0 +1,214 @@
+{
+  "site": {
+    "title": "Y2K",
+    "links": [
+      {
+        "title": "Intro",
+        "url": "/#intro"
+      },
+      {
+        "title": "Collection",
+        "url": "/#collection"
+      },
+      {
+        "title": "Gallery",
+        "url": "/#gallery"
+      }
+    ]
+  },
+  "pages": {
+    "/": {
+      "id": 4,
+      "title": "Y2K",
+      "uri": "/",
+      "description": "A visual journey through the tech, fashion, music and games that shaped a generation.",
+      "sections": [
+        {
+          "acf_fc_layout": "intro",
+          "number": "01",
+          "label": "Intro",
+          "heading": "A more colorful tomorrow",
+          "description": "A visual journey through the tech, fashion, music and games that shaped a generation — and still inspire us today.",
+          "tags": "Music\r\nFashion\r\nGames",
+          "anchor": "intro",
+          "collector_brand": "Y2K",
+          "collector_title": "Digital collector",
+          "collector_motto": "Good people\r\nGood city\r\nNew world\r\nSame aesthetic",
+          "collector_number": "No. 00012000",
+          "collector_footer": "Est. 2000\r\nFor a brighter tomorrow",
+          "collector_anchor": "",
+          "title": "Back to when internet\r\nwas cooler",
+          "model_alt": "Interactive pink heart with an orbiting ring",
+          "sublabel": "",
+          "model": "/models/pink-heart-orbit.glb",
+          "collector_enabled": true
+        },
+        {
+          "acf_fc_layout": "collection",
+          "number": "2",
+          "label": "collection",
+          "anchor": "collection",
+          "sublabel": "Icons live on",
+          "cards": [
+            {
+              "name": "Butterfly headphones",
+              "model": "/models/butterfly_headphones_y2k-y3k.glb",
+              "angle": 60,
+              "tilt": 75,
+              "distance": 115
+            },
+            {
+              "name": "Virtual pet",
+              "model": "/models/translucent_blue_tamagotchi__game_ready.glb",
+              "angle": 0,
+              "tilt": 90,
+              "distance": 120
+            },
+            {
+              "name": "Sony PlayStation One",
+              "model": "/models/sony_playstation_one.glb",
+              "angle": 70,
+              "tilt": 60,
+              "distance": 110
+            },
+            {
+              "name": "Flip phone",
+              "model": "/models/free_-_pink_retro_flip_phone_3d_model.glb",
+              "angle": 70,
+              "tilt": 65,
+              "distance": 110
+            },
+            {
+              "name": "Nintendo Game Boy",
+              "model": "/models/nintendo_game_boy.glb",
+              "angle": 0,
+              "tilt": 75,
+              "distance": 150
+            },
+            {
+              "name": "Retro CRT TV",
+              "model": "/models/retro_crt_tv.glb",
+              "angle": 60,
+              "tilt": 75,
+              "distance": 110
+            },
+            {
+              "name": "Lava lamp",
+              "model": "/models/lava_lamp.glb",
+              "angle": 0,
+              "tilt": 75,
+              "distance": 130
+            },
+            {
+              "name": "Retro computer",
+              "model": "/models/retro_computer.glb",
+              "angle": 340,
+              "tilt": 80,
+              "distance": 100
+            },
+            {
+              "name": "Floppy disk",
+              "model": "/models/heart_drive.glb",
+              "angle": 0,
+              "tilt": 90,
+              "distance": 170
+            },
+            {
+              "name": "Aquarium lamp",
+              "model": "/models/aquarium_lamp.glb",
+              "angle": 0,
+              "tilt": 75,
+              "distance": 130
+            },
+            {
+              "name": "CD jewel case",
+              "model": "/models/cd__jewel_case.glb",
+              "angle": 95,
+              "tilt": 90,
+              "distance": 120
+            },
+            {
+              "name": "Pac-Man arcade",
+              "model": "/models/pacman_arcade__animation.glb",
+              "angle": 40,
+              "tilt": 75,
+              "distance": 110
+            },
+            {
+              "name": "MP3 player",
+              "model": "/models/mp3_player.glb",
+              "angle": 155,
+              "tilt": 30,
+              "distance": 110
+            },
+            {
+              "name": "VHS player & tape",
+              "model": "/models/psx_vhs_player__tape.glb",
+              "angle": 340,
+              "tilt": 60,
+              "distance": 110
+            },
+            {
+              "name": "Boombox",
+              "model": "/models/ulterior_motives_glitz_and_glitter_cd_boombox.glb",
+              "angle": 0,
+              "tilt": 75,
+              "distance": 110
+            },
+            {
+              "name": "Cassette tape",
+              "model": "/models/cassette_tape.glb",
+              "angle": 0,
+              "tilt": 75,
+              "distance": 150
+            }
+          ]
+        },
+        {
+          "acf_fc_layout": "gallery",
+          "number": "3",
+          "label": "gallery",
+          "anchor": "gallery",
+          "sublabel": "",
+          "cards": [
+            {
+              "title": "",
+              "image": "/gallery/barbie.jpg",
+              "alt": "Barbie game room with arcade games",
+              "width": 600,
+              "height": 360
+            },
+            {
+              "title": "",
+              "image": "/gallery/barbie-2.jpg",
+              "alt": "Barbie.com makeover, fairy and Baby Krissy games",
+              "width": 1280,
+              "height": 720
+            },
+            {
+              "title": "",
+              "image": "/gallery/tamagochi-town.webp",
+              "alt": "Colorful map of Tamagotchi Town",
+              "width": 1000,
+              "height": 666
+            },
+            {
+              "title": "",
+              "image": "/gallery/my-scene.jpg",
+              "alt": "My Scene makeover game with pink and blue hair",
+              "width": 540,
+              "height": 416
+            },
+            {
+              "title": "",
+              "image": "/gallery/polly-pocket.jpg",
+              "alt": "Polly Pocket Beautiful Bedroom decorating game",
+              "width": 1036,
+              "height": 809
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -9,7 +9,8 @@
     "typecheck": "tsc --noEmit",
     "wp:up": "docker compose up -d wordpress",
     "wp:setup": "node scripts/setup-wordpress.mjs",
-    "wp:down": "docker compose down"
+    "wp:down": "docker compose down",
+    "preview:export": "node scripts/export-preview.mjs"
   },
   "dependencies": {
     "next": "^16.0.0",
