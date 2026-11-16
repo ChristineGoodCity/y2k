@@ -744,9 +744,12 @@
                 {
                   "key": "field_builder_gallery_image",
                   "name": "image",
-                  "label": "Image URL",
-                  "type": "text",
-                  "instructions": "Local path or image URL."
+                  "label": "Image",
+                  "type": "image",
+                  "return_format": "url",
+                  "preview_size": "medium",
+                  "library": "all",
+                  "instructions": "Upload or select an image from the Media Library."
                 },
                 {
                   "key": "field_builder_gallery_title",

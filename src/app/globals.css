@@ -2,7 +2,7 @@
 
 @source "../";
 
-/* Shared design values. Keep changes here as components are introduced.
+/* Colors and design tokens. Keep changes here as components are introduced.
    Tailwind creates utilities such as bg-canvas, text-ink. Typography is composed in typo-* utilities below.
    Static emits these variables for future WordPress theme.json references. */
 @theme static {
@@ -71,12 +71,7 @@ body {
   }
 }
 
-/* Shared rounded outline for labels, cards and panels. */
-@utility border-frame {
-  @apply rounded-lg border border-accent;
-}
-
-/* Reusable typography recipes: one class sets family, size, weight and rhythm. */
+/* Typography: all typo-* recipes, including component typography. */
 @utility typo-body {
   @apply font-sans text-[16px] leading-[165%] font-normal;
 }
@@ -111,29 +106,20 @@ body {
   @apply font-sans text-[10px] leading-[18px] font-medium tracking-[0.28em] uppercase;
 }
 
-/* Mobile first: md = 768px, lg = 1024px, xl = 1280px.
-   Apply site-content to the frontend content wrapper and editor canvas content. */
-@layer components {
-  .site-content {
-    @apply bg-canvas text-ink typo-body;
-  }
-
-  /* Shared container and grid: 6 columns on mobile, 8 on tablet, 12 on desktop.
-     Components choose their own column spans; use col-span-full for a full row. */
-  .custom-grid {
-    @apply mx-auto grid w-full max-w-[1512px] grid-cols-6 gap-x-4 px-4
-      md:grid-cols-8 md:gap-x-6 md:px-6
-      lg:grid-cols-12 lg:px-8 xl:px-6;
-  }
+/* Printed card typography scales with the card, preserving its artwork proportions. */
+@utility typo-collector-wordmark {
+  @apply font-sans text-[6cqw] leading-none font-black tracking-[-0.06em];
 }
 
-/* Shared glitter surface for lettering and card borders. */
-@utility glitter-surface {
-  @apply bg-[linear-gradient(110deg,transparent_43%,#ffffff99_47%,#fff_49%,#fff_51%,#ffffff99_53%,transparent_57%),url('/textures/foil-glitter.svg'),var(--background-image-collector-foil)] bg-size-[250%_100%,64px_64px,300%_100%] bg-position-[100%_50%,0px_0px,0%_50%];
-  @apply motion-safe:group-hover/glitter:animate-[glitter-link-shimmer_1.4s_linear_infinite] motion-safe:group-focus-within/glitter:animate-[glitter-link-shimmer_1.4s_linear_infinite];
+@utility typo-collector-label {
+  @apply font-sans text-[1.8cqw] leading-normal font-medium tracking-[0.28em] uppercase;
 }
 
-/* Tailwind does not support @apply inside keyframes. */
+@utility typo-collector-micro {
+  @apply font-sans text-[1.25cqw] leading-normal font-medium tracking-[0.2em] uppercase;
+}
+
+/* Animations: keyframes. */
 @keyframes glitter-link-shimmer {
   from {
     background-position:
@@ -149,19 +135,20 @@ body {
   }
 }
 
-/* Collector card: typography, animated properties, then surface effects. */
-
-/* Printed card typography scales with the card, preserving its artwork proportions. */
-@utility typo-collector-wordmark {
-  @apply font-sans text-[6cqw] leading-none font-black tracking-[-0.06em];
-}
-
-@utility typo-collector-label {
-  @apply font-sans text-[1.8cqw] leading-normal font-medium tracking-[0.28em] uppercase;
-}
-
-@utility typo-collector-micro {
-  @apply font-sans text-[1.25cqw] leading-normal font-medium tracking-[0.2em] uppercase;
+/* Collection float */
+@keyframes collection-float {
+  0%,
+  100% {
+    transform: translate(var(--float-x, 0px), var(--float-y, 4px))
+      rotate(calc(-1 * var(--float-tilt, 3deg)));
+  }
+  50% {
+    transform: translate(
+        calc(-1 * var(--float-x, 0px)),
+        calc(-1 * var(--float-y, 4px))
+      )
+      rotate(var(--float-tilt, 3deg));
+  }
 }
 
 /* Typed positions let the reflected light ease between pointer updates. */
@@ -189,6 +176,47 @@ body {
   initial-value: 50%;
 }
 
+/* Reduced-motion overrides. */
+@layer components {
+  @media (prefers-reduced-motion: reduce) {
+    .collector-card::after,
+    .collector-card__holographic,
+    .collector-card__holographic::after {
+      @apply transition-none;
+    }
+  }
+}
+
+/* Shared utilities. */
+/* Shared rounded outline for labels, cards and panels. */
+@utility border-frame {
+  @apply rounded-lg border border-accent;
+}
+
+/* Shared glitter surface for lettering and card borders. */
+@utility holographic-surface {
+  @apply bg-[linear-gradient(110deg,transparent_43%,#ffffff99_47%,#fff_49%,#fff_51%,#ffffff99_53%,transparent_57%),url('/textures/foil-glitter.svg'),var(--background-image-collector-foil)] bg-size-[250%_100%,64px_64px,300%_100%] bg-position-[100%_50%,0px_0px,0%_50%];
+  @apply motion-safe:group-hover/holographic:animate-[glitter-link-shimmer_1.4s_linear_infinite] motion-safe:group-focus-within/holographic:animate-[glitter-link-shimmer_1.4s_linear_infinite];
+}
+
+/* Shared layout. */
+/* Mobile first: md = 768px, lg = 1024px, xl = 1280px.
+   Apply site-content to the frontend content wrapper and editor canvas content. */
+@layer components {
+  .site-content {
+    @apply bg-canvas text-ink typo-body;
+  }
+
+  /* Shared container and grid: 6 columns on mobile, 8 on tablet, 12 on desktop.
+     Components choose their own column spans; use col-span-full for a full row. */
+  .custom-grid {
+    @apply mx-auto grid w-full max-w-[1512px] grid-cols-6 gap-x-4 px-4
+      md:grid-cols-8 md:gap-x-6 md:px-6
+      lg:grid-cols-12 lg:px-8 xl:px-6;
+  }
+}
+
+/* Component styles: collector card. */
 @layer components {
   .collector-card {
     @apply bg-collector-foil;
@@ -199,7 +227,7 @@ body {
 
   /* Rainbow hue and reflected light travel independently, like foil changing angle.
      Broad light bands replace the reference's tightly striped illusion texture. */
-  .collector-card__foil {
+  .collector-card__holographic {
     @apply pointer-events-none absolute inset-0 z-0;
     @apply bg-[repeating-linear-gradient(0deg,#ff8bd5_5%,#e98bff_10%,#b58bff_15%,#87adff_20%,#91e8cc_25%,#d875ff_30%,#ff8bd5_35%),repeating-linear-gradient(133deg,#18243a_0%,#8fa3a3_14%,#badbd6_22%,#8fa3a3_30%,#18243a_44%),radial-gradient(farthest-corner_circle_at_var(--shine-x,50%)_var(--shine-y,50%),#999_0%,#555_65%,#333_120%)];
     @apply bg-size-[200%_700%,300%_100%,200%_100%];
@@ -210,7 +238,7 @@ body {
     @apply opacity-(--foil-intensity,0.12);
   }
 
-  .collector-card__foil::after {
+  .collector-card__holographic::after {
     @apply pointer-events-none absolute inset-0 content-[''];
     @apply [background-image:inherit];
     @apply [background-blend-mode:inherit];
@@ -253,29 +281,5 @@ body {
     @apply [background:radial-gradient(farthest-corner_circle_at_var(--shine-x,50%)_var(--shine-y,50%),#ffffff40_0%,#ffffff20_20%,#0000004d_90%)];
     @apply mix-blend-overlay;
     @apply opacity-(--shine-opacity,0.15);
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .collector-card::after,
-    .collector-card__foil,
-    .collector-card__foil::after {
-      @apply transition-none;
-    }
-  }
-}
-
-/* Collection float */
-@keyframes collection-float {
-  0%,
-  100% {
-    transform: translate(var(--float-x, 0px), var(--float-y, 4px))
-      rotate(calc(-1 * var(--float-tilt, 3deg)));
-  }
-  50% {
-    transform: translate(
-        calc(-1 * var(--float-x, 0px)),
-        calc(-1 * var(--float-y, 4px))
-      )
-      rotate(var(--float-tilt, 3deg));
   }
 }

@@ -1,5 +1,5 @@
 import { GlitterBorder } from "./glitter-border";
-import { GlitterText } from "./glitter-text";
+import { HolographicText } from "./holographic-text";
 import Image from "next/image";
 import type { GalleryCard as GalleryCardProps } from "@/lib/types";
 
@@ -11,7 +11,7 @@ export function GalleryCard({
   height,
 }: GalleryCardProps) {
   return (
-    <figure className="group/glitter relative isolate min-w-0 border-frame">
+    <figure className="group/holographic relative isolate min-w-0 border-frame">
       <Image
         src={image}
         alt={alt}
@@ -23,7 +23,7 @@ export function GalleryCard({
       />
       {title && (
         <figcaption className="typo-section-sublabel px-3 py-2 text-accent wrap-break-word">
-          <GlitterText>{title}</GlitterText>
+          <HolographicText>{title}</HolographicText>
         </figcaption>
       )}
       <GlitterBorder />

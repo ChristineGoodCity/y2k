@@ -1,5 +1,5 @@
 import { GlitterBorder } from "./glitter-border";
-import { GlitterText } from "./glitter-text";
+import { HolographicText } from "./holographic-text";
 import type { CSSProperties } from "react";
 import { Model } from "./model";
 
@@ -19,7 +19,7 @@ export function CollectionCard({
   motionIndex = 0,
 }: CollectionCardProps & { motionIndex?: number }) {
   return (
-    <figure className="group/glitter relative isolate flex min-w-0 flex-col border-frame">
+    <figure className="group/holographic relative isolate flex min-w-0 flex-col border-frame">
       <div className="aspect-square min-w-0 overflow-hidden rounded-t-[7px] p-2">
         {model ? (
           <div
@@ -62,10 +62,10 @@ export function CollectionCard({
       </div>
       <figcaption className="mt-auto flex items-baseline gap-5 px-3 pb-2 text-accent">
         <span className="typo-section-number shrink-0">
-          <GlitterText>{number}</GlitterText>
+          <HolographicText>{number}</HolographicText>
         </span>
         <span className="typo-section-sublabel min-w-0 wrap-break-word">
-          <GlitterText>{title}</GlitterText>
+          <HolographicText>{title}</HolographicText>
         </span>
       </figcaption>
       <GlitterBorder />

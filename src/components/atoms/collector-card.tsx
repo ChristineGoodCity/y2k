@@ -89,7 +89,7 @@ export function CollectorCard({
         ref={ref}
         className="collector-card relative isolate aspect-[2.85] w-full overflow-hidden rounded-[2.8cqw] px-[4%] py-[3.5%] text-canvas"
       >
-        <span className="collector-card__foil" aria-hidden="true" />
+        <span className="collector-card__holographic" aria-hidden="true" />
         <span className="collector-card__glitter" aria-hidden="true" />
         <span className="collector-card__stars" aria-hidden="true" />
         <div className="relative z-1">
