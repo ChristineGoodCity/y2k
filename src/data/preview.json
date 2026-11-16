@@ -13,6 +13,18 @@
       {
         "title": "Gallery",
         "url": "/#gallery"
+      },
+      {
+        "title": "Internet",
+        "url": "/#internet"
+      },
+      {
+        "title": "Music",
+        "url": "/#music"
+      },
+      {
+        "title": "Games",
+        "url": "/#games"
       }
     ]
   },
@@ -26,7 +38,7 @@
         {
           "acf_fc_layout": "intro",
           "label": "Intro",
-          "heading": "A more colorful tomorrow",
+          "heading": "THE ERA WE KEEP COMING BACK TO",
           "description": "A visual journey through the tech, fashion, music and games that shaped a generation — and still inspire us today.",
           "tags": "Music\r\nFashion\r\nGames",
           "anchor": "intro",
@@ -46,7 +58,7 @@
           "acf_fc_layout": "collection",
           "label": "collection",
           "anchor": "collection",
-          "sublabel": "Icons live on",
+          "sublabel": "A generation’s obesessions",
           "cards": [
             {
               "name": "Butterfly headphones",
@@ -170,35 +182,204 @@
           "cards": [
             {
               "title": "",
-              "image": "/gallery/barbie.jpg",
+              "image": "/gallery/4f11188597b0d2dba7ca29f1164f645a.jpg",
+              "alt": "Avril Lavigne magazine cover in neon colors",
+              "width": 736,
+              "height": 981
+            },
+            {
+              "title": "",
+              "image": "/gallery/o4qvfne3cqkoud5Rpgvf3M-scaled.jpg",
+              "alt": "Pink tracksuit with a small dog",
+              "width": 1606,
+              "height": 2560
+            },
+            {
+              "title": "",
+              "image": "/gallery/trends-international-britney-spears-oops-i-did-it-again_u-L-FAFGEX0.jpg",
+              "alt": "Britney Spears poster with beaded curtains",
+              "width": 296,
+              "height": 450
+            },
+            {
+              "title": "",
+              "image": "/gallery/backstreet-boys-throwback-group_u-L-Q1WD7KU0.jpg",
+              "alt": "Backstreet Boys poster with silver outfits",
+              "width": 296,
+              "height": 450
+            },
+            {
+              "title": "",
+              "image": "/gallery/y2k-aesthetic-clothes-essentials-scaled.jpg",
+              "alt": "Holographic accessories, butterfly clips and digital cameras",
+              "width": 2560,
+              "height": 1429
+            },
+            {
+              "title": "",
+              "image": "/gallery/riri.jpeg",
+              "alt": "RiRi poster with colorful sunglasses",
+              "width": 451,
+              "height": 680
+            },
+            {
+              "title": "",
+              "image": "/gallery/images.jpeg",
+              "alt": "Black outfit with a studded belt and sunglasses",
+              "width": 399,
+              "height": 501
+            },
+            {
+              "title": "",
+              "image": "/gallery/HIM_Razorblade_Romance_.jpg",
+              "alt": "HIM Razorblade Romance album artwork",
+              "width": 593,
+              "height": 600
+            },
+            {
+              "title": "",
+              "image": "/gallery/Britney-Spears-Justin-Timberlakes-Denim-Duo-2.png",
+              "alt": "Britney Spears and Justin Timberlake matching denim collage",
+              "width": 1414,
+              "height": 2000
+            },
+            {
+              "title": "",
+              "image": "/gallery/60b5ac717b538b48e3c90ce1b1f455ee.jpg",
+              "alt": "Spice World movie poster",
+              "width": 580,
+              "height": 873
+            },
+            {
+              "title": "",
+              "image": "/gallery/lizbreygel-blog-y2k-fashion-style-5.jpg",
+              "alt": "Y2K fashion collage with butterfly and metallic tops",
+              "width": 1200,
+              "height": 800
+            },
+            {
+              "title": "",
+              "image": "/gallery/05fea98d255745a0746608c804f962f9.jpg",
+              "alt": "Blue tracksuit and white headscarf at an awards ceremony",
+              "width": 736,
+              "height": 1105
+            },
+            {
+              "title": "",
+              "image": "/gallery/ec17a5268a3b27b1da7ee89b0ceb8e4e.jpg",
+              "alt": "Pink sunglasses and a pink graphic T-shirt",
+              "width": 720,
+              "height": 960
+            },
+            {
+              "title": "",
+              "image": "/gallery/4c9e51d04b00e3a5356a32d3fec68193.jpg",
+              "alt": "Oasis poster with a blue circular pattern",
+              "width": 236,
+              "height": 350
+            },
+            {
+              "title": "",
+              "image": "/gallery/y2k-fashion-vibes-stockcake.jpg",
+              "alt": "Metallic halter top and butterfly hair clips",
+              "width": 384,
+              "height": 688
+            },
+            {
+              "title": "",
+              "image": "/gallery/c2d6d6095afc05deba8e8ab72934a46e.jpg",
+              "alt": "Boy band wearing leather jackets and tinted sunglasses",
+              "width": 736,
+              "height": 472
+            },
+            {
+              "title": "",
+              "image": "/gallery/68d87d4de4d126bf560ebb0175a3242c.jpg",
+              "alt": "Two coordinated outfits with red tinted sunglasses",
+              "width": 736,
+              "height": 1046
+            },
+            {
+              "title": "",
+              "image": "/gallery/evanescence-amy-close-up_u-L-FAIZX10.jpg",
+              "alt": "Evanescence portrait poster",
+              "width": 296,
+              "height": 450
+            },
+            {
+              "title": "",
+              "image": "/gallery/a5481b3866d1c8abb14ec09ea329937f.jpg",
+              "alt": "Three coordinated floral tops with embellished jeans",
+              "width": 677,
+              "height": 1200
+            },
+            {
+              "title": "",
+              "image": "/gallery/ba3b6fe6d03713fcab2f032baf601926.jpg",
+              "alt": "Blue Nokia 3310 collage",
+              "width": 736,
+              "height": 981
+            },
+            {
+              "title": "",
+              "image": "/gallery/GettyImages-111183890-4eaee449b53f44048eb27bbc16fc2d78.jpg",
+              "alt": "Pink cropped top, cropped jeans and orange shoes",
+              "width": 1359,
+              "height": 2125
+            },
+            {
+              "title": "",
+              "image": "/gallery/86b0a923f8cb4365ce9e2a7d7849fb63.jpg",
+              "alt": "Red carpet outfit with a brown leather jacket and jeans",
+              "width": 736,
+              "height": 1127
+            },
+            {
+              "title": "",
+              "image": "/gallery/linkin-park-hit-parader.jpg",
+              "alt": "Linkin Park band poster with a Hit Parader logo",
+              "width": 540,
+              "height": 744
+            }
+          ]
+        },
+        {
+          "acf_fc_layout": "gallery",
+          "label": "internet",
+          "anchor": "internet",
+          "sublabel": "",
+          "cards": [
+            {
+              "title": "",
+              "image": "/internet/barbie.jpg",
               "alt": "Barbie game room with arcade games",
               "width": 600,
               "height": 360
             },
             {
               "title": "",
-              "image": "/gallery/barbie-2.jpg",
+              "image": "/internet/barbie-2.jpg",
               "alt": "Barbie.com makeover, fairy and Baby Krissy games",
               "width": 1280,
               "height": 720
             },
             {
               "title": "",
-              "image": "/gallery/tamagochi-town.webp",
+              "image": "/internet/tamagochi-town.webp",
               "alt": "Colorful map of Tamagotchi Town",
               "width": 1000,
               "height": 666
             },
             {
               "title": "",
-              "image": "/gallery/my-scene.jpg",
+              "image": "/internet/my-scene.jpg",
               "alt": "My Scene makeover game with pink and blue hair",
               "width": 540,
               "height": 416
             },
             {
               "title": "",
-              "image": "/gallery/polly-pocket.jpg",
+              "image": "/internet/polly-pocket.jpg",
               "alt": "Polly Pocket Beautiful Bedroom decorating game",
               "width": 1036,
               "height": 809
