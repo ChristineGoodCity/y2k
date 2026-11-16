@@ -23,6 +23,10 @@ export function IntroSection({
   collector_footer = "",
   id,
 }: Intro & { id: string; number: string }) {
+  const modelSource = model || "/models/pink-heart-orbit.glb";
+  const heartPoster = /(?:^|\/)pink-heart-orbit\.glb(?:[?#].*)?$/.test(modelSource)
+    ? "/models/pink-heart-orbit.webp"
+    : undefined;
   return (
     <section id={id} className="custom-grid min-h-[680px] py-8 md:py-12">
       <div className="col-span-full mb-8 grid grid-cols-subgrid items-center lg:col-span-7 lg:mb-0 lg:grid-cols-[8rem_minmax(0,1fr)] lg:gap-x-4">
@@ -35,10 +39,12 @@ export function IntroSection({
         <div className="col-span-4 h-[280px] min-w-0 md:col-span-6 md:h-[420px] lg:col-span-1 lg:h-[500px]">
           <Model
             attributes={{
-              model: model || "/models/pink-heart-orbit.glb",
+              model: modelSource,
               alt: model_alt || "Interactive pink heart with an orbiting ring",
             }}
             className="block"
+            loading="eager"
+            poster={heartPoster}
           />
         </div>
       </div>
