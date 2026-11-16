@@ -25,7 +25,6 @@
       "sections": [
         {
           "acf_fc_layout": "intro",
-          "number": "01",
           "label": "Intro",
           "heading": "A more colorful tomorrow",
           "description": "A visual journey through the tech, fashion, music and games that shaped a generation — and still inspire us today.",
@@ -45,7 +44,6 @@
         },
         {
           "acf_fc_layout": "collection",
-          "number": "2",
           "label": "collection",
           "anchor": "collection",
           "sublabel": "Icons live on",
@@ -166,7 +164,6 @@
         },
         {
           "acf_fc_layout": "gallery",
-          "number": "3",
           "label": "gallery",
           "anchor": "gallery",
           "sublabel": "",

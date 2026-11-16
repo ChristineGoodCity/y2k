@@ -31,31 +31,6 @@
           "display": "block",
           "sub_fields": [
             {
-              "key": "field_builder_intro_number",
-              "label": "Number",
-              "name": "number",
-              "aria-label": "",
-              "type": "text",
-              "menu_order": 0,
-              "instructions": "",
-              "required": false,
-              "id": "",
-              "class": "",
-              "conditional_logic": false,
-              "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-              },
-              "rows": 3,
-              "default_value": "",
-              "maxlength": "",
-              "placeholder": "",
-              "prepend": "",
-              "append": "",
-              "ID": 0
-            },
-            {
               "key": "field_builder_intro_label",
               "label": "Label",
               "name": "label",
@@ -465,30 +440,6 @@
           "display": "block",
           "sub_fields": [
             {
-              "key": "field_builder_collection_number",
-              "label": "Number",
-              "name": "number",
-              "aria-label": "",
-              "type": "text",
-              "menu_order": 0,
-              "instructions": "",
-              "required": false,
-              "id": "",
-              "class": "",
-              "conditional_logic": false,
-              "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-              },
-              "default_value": 2,
-              "maxlength": "",
-              "placeholder": "",
-              "prepend": "",
-              "append": "",
-              "ID": 0
-            },
-            {
               "key": "field_builder_collection_label",
               "label": "Label",
               "name": "label",
@@ -706,13 +657,6 @@
           "label": "Gallery",
           "display": "block",
           "sub_fields": [
-            {
-              "key": "field_builder_gallery_number",
-              "name": "number",
-              "label": "Number",
-              "type": "text",
-              "default_value": "3"
-            },
             {
               "key": "field_builder_gallery_label",
               "name": "label",

@@ -10,7 +10,7 @@ export function Header({ site }: { site: Site }) {
       <div className="custom-grid min-h-12 items-center py-2">
         <a
           href="/"
-          className="group/holographic col-span-2 typo-wordmark text-accent md:col-span-3 lg:col-span-6 italic"
+          className="group/holographic col-span-2 text-accent md:col-span-3 lg:col-span-6 italic"
           aria-label={`${site.title} home`}
         >
           <Wordmark title={site.title} />

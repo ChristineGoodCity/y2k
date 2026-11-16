@@ -23,15 +23,13 @@ export function CollectionCard({
       <div className="aspect-square min-w-0 overflow-hidden rounded-t-[7px] p-2">
         {model ? (
           <div
-            className="h-full motion-safe:animate-[collection-float_7s_ease-in-out_infinite] active:[animation-play-state:paused] focus-within:[animation-play-state:paused]"
+            className="h-full motion-safe:[&_model-viewer]:animate-(--float-animation) [&_model-viewer:active]:[animation-play-state:paused] [&_model-viewer:focus-within]:[animation-play-state:paused]"
             style={
               {
                 "--float-x": `${[2, -3, 1, -2, 3][motionIndex % 5]}px`,
                 "--float-y": `${[4, 6, 3, 5, 7][motionIndex % 5]}px`,
                 "--float-tilt": `${[2, -1.5, 3, -2.5, 1][motionIndex % 5]}deg`,
-                animationDuration: `${7 + (motionIndex % 5) * 0.65}s`,
-                animationDirection: motionIndex % 2 ? "reverse" : "normal",
-                animationDelay: `${-motionIndex * 1.7}s`,
+                "--float-animation": `collection-float ${7 + (motionIndex % 5) * 0.65}s ease-in-out ${-motionIndex * 1.7}s infinite ${motionIndex % 2 ? "reverse" : "normal"}`,
               } as CSSProperties
             }
           >

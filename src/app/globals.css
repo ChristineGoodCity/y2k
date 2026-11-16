@@ -164,29 +164,6 @@ body {
   initial-value: 50%;
 }
 
-@property --star-x {
-  syntax: "<percentage>";
-  inherits: true;
-  initial-value: 50%;
-}
-
-@property --star-y {
-  syntax: "<percentage>";
-  inherits: true;
-  initial-value: 50%;
-}
-
-/* Reduced-motion overrides. */
-@layer components {
-  @media (prefers-reduced-motion: reduce) {
-    .collector-card::after,
-    .collector-card__holographic,
-    .collector-card__holographic::after {
-      @apply transition-none;
-    }
-  }
-}
-
 /* Shared utilities. */
 /* Shared rounded outline for labels, cards and panels. */
 @utility border-frame {

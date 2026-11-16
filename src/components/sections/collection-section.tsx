@@ -8,7 +8,7 @@ export function CollectionSection({
   sublabel,
   id,
   cards,
-}: Collection & { id: string }) {
+}: Collection & { id: string; number: string }) {
   const items = cards.map((card, index) => ({
     title: card.name ?? "",
     model: card.model ?? "",
@@ -19,7 +19,7 @@ export function CollectionSection({
   return (
     <section id={id} className="custom-grid py-8 md:py-12">
       <SectionHeader
-        number={number ?? "2"}
+        number={number}
         label={label ?? "collection"}
         sublabel={sublabel ?? "Icons live on"}
       />

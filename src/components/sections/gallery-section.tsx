@@ -8,11 +8,11 @@ export function GallerySection({
   sublabel,
   id,
   cards,
-}: Gallery & { id: string }) {
+}: Gallery & { id: string; number: string }) {
   return (
     <section id={id} className="custom-grid py-8 md:py-12">
       <SectionHeader
-        number={number || "3"}
+        number={number}
         label={label || "gallery"}
         sublabel={sublabel}
       />

@@ -8,6 +8,11 @@ if (!defined("ABSPATH")) {
     exit();
 }
 require_once __DIR__ . "/model-uploads.php";
+// Existing installations may still have manual numbers saved in their ACF schema.
+// Hide those obsolete inputs; the frontend numbers sections by page order.
+foreach (["intro", "collection", "gallery"] as $layout) {
+    add_filter("acf/prepare_field/key=field_builder_{$layout}_number", "__return_false");
+}
 add_action("init", function () {
     remove_post_type_support("page", "editor");
 });

@@ -94,7 +94,7 @@ export function Model({
       {loadingStatic && !failed && revealedSource !== source && (
         <div
           aria-hidden="true"
-          className={`pointer-events-none absolute inset-0 z-10 bg-black transition-opacity duration-700 ease-out ${ready ? "opacity-0" : "opacity-100"}`}
+          className={`pointer-events-none absolute inset-0 z-10 bg-canvas transition-opacity duration-700 ease-out ${ready ? "opacity-0" : "opacity-100"}`}
           onTransitionEnd={(event) => {
             if (event.target === event.currentTarget && ready)
               setRevealedSource(source);

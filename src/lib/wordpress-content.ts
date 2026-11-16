@@ -75,6 +75,8 @@ function getBuilderSections(value: unknown, endpoint: string): Section[] {
       return [];
     const { cards, collector_enabled = false, model, ...fields } = row;
     // Text defaults can be numbers in ACF; preserve all other field types.
+    // Section numbers come from page order, including for older CMS entries.
+    delete fields.number;
     for (const [key, value] of Object.entries(fields)) {
       fields[key] =
         value == null ? "" : typeof value === "number" ? String(value) : value;

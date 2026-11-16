@@ -17,7 +17,6 @@ export function GalleryCard({
         alt={alt}
         width={width}
         height={height}
-        sizes="(max-width: 639px) calc(100vw - 32px), (max-width: 1023px) 50vw, 33vw"
         className="block h-auto w-full rounded-t-[7px]"
         unoptimized
       />

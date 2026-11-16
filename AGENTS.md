@@ -5,6 +5,14 @@
 - Keep `src/components/sections.tsx` limited to mapping WordPress section types to components and preserving their order. Section markup and styling belong in the individual components.
 - Reuse existing atoms, shared grid, typography, and design tokens. Preserve the original Y2K behavior and appearance when migrating components.
 
+# Avoid redundant and ineffective code
+
+- Apply this rule across components, application logic, CSS, types, CMS fields, scripts, and configuration: give each value or behavior one clear source of truth.
+- Do not set a value only to unconditionally override it later. For example, do not hardcode an animation duration in a utility when an inline style always replaces it. Keep defaults only when a real execution path uses them.
+- Trace settings from their definition to their consumer. Remove unused props, ignored configuration, duplicate declarations, unreachable fallbacks, and fields that are parsed or exported but never used. Verify that utilities and configuration actually produce the intended behavior with the installed tools.
+- When changing how a value is supplied or derived, update its consumers and remove obsolete definitions in the affected code, types, CMS schema, and export data. Account for existing CMS installations without deleting unrelated content or customizations.
+- Prefer the simplest implementation that preserves behavior. Do not introduce props, state, wrappers, or abstractions when existing component structure or native HTML/CSS can express the requirement clearly. Keep intentional fallbacks, validation, and compatibility behavior when they serve a concrete purpose.
+
 # Prefer native HTML and CSS
 
 - Prefer semantic HTML and CSS (including Tailwind utilities) over JavaScript for layout, responsive behavior, visual states, effects, transitions, and animations. Use native browser features when they meet the requirement.

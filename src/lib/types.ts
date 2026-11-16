@@ -1,6 +1,5 @@
 type SectionFields = {
   anchor?: string;
-  number?: string;
   label?: string;
   sublabel?: string;
 };
