@@ -36,6 +36,7 @@ export function CollectionCard({
             }
           >
             <Model
+              loadingStatic
               attributes={{ model, alt: title }}
               cameraOrbit={cameraOrbit}
               className="block"
