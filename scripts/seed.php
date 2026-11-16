@@ -12,7 +12,7 @@ $id = wp_insert_post([
 $field = acf_get_field('field_page_builder');
 $rows = [];
 foreach ($field['layouts'] as $layout) {
-    if ($layout['name'] === 'gallery') continue; // Populated by setup-gallery.php.
+    if ($layout['name'] === 'gallery') continue; // Gallery content is added on request.
     $row = ['acf_fc_layout' => $layout['name']];
     foreach ($layout['sub_fields'] as $subfield) {
         $row[$subfield['key']] = $subfield['type'] === 'repeater' ? [] : ($subfield['default_value'] ?? '');

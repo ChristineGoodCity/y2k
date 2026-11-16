@@ -1,5 +1,5 @@
 <?php
-/** Install editable navigation fields and copy the old menu once. */
+/** Install editable navigation fields for site setup. */
 if (!defined('ABSPATH')) require '/var/www/html/wp-load.php';
 if (!acf_get_field_group('group_y2k_navigation')) {
     acf_import_field_group([
@@ -15,14 +15,5 @@ if (!acf_get_field_group('group_y2k_navigation')) {
         ]],
         'location'=>[[['param'=>'options_page','operator'=>'==','value'=>'y2k-site-settings']]],
     ]);
-}
-if (get_option('options_header_links', null) === null) {
-    $locations=get_nav_menu_locations();
-    $links=[];
-    foreach (wp_get_nav_menu_items($locations['header'] ?? 0) ?: [] as $item) {
-        $links[]=['field_y2k_header_link_title'=>$item->title,'field_y2k_header_link_url'=>$item->url];
-    }
-    update_field('field_y2k_header_links',$links,'option');
-    echo 'Copied '.count($links)." header links.\n";
 }
 echo "ACF navigation ready.\n";

@@ -73,7 +73,7 @@ if (wp(["plugin", "is-installed", "advanced-custom-fields-pro"], undefined, true
 wp(["plugin", "install", "wp-graphql", "--activate"]);
 wp(["plugin", "activate", "y2k-headless"]);
 wp(["rewrite", "structure", "/%postname%/", "--hard"]);
-for (const script of ["setup-site-settings.php", "setup-page-builder.php", "simplify-builder-fields.php", "setup-navigation.php", "seed.php", "setup-gallery.php", "setup-gallery-titles.php"]) {
+for (const script of ["setup-site-settings.php", "setup-page-builder.php", "setup-navigation.php", "seed.php"]) {
   wp(["eval", readFileSync(`scripts/${script}`, "utf8").replace("<?php", "")]);
 }
 if (!existsSync(".env.local")) {

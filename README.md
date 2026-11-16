@@ -60,7 +60,7 @@ Use Node-compatible hosting for Next.js and PHP/MySQL hosting for WordPress. Ins
 
 ACF field groups used by the frontend have **Show in REST API** enabled. Page content uses the standard WordPress REST API; WPGraphQL currently remains only for the site title and navigation. Requests are deduplicated within a render, while saved CMS changes stay fresh between visits.
 
-ACF layout fields match React section props directly (for example `heading` and `cards`). `sections.tsx` selects the typed component by `acf_fc_layout`. The loader validates fields and normalizes model URLs; camera formatting lives in Collection. Existing installations run `scripts/simplify-builder-fields.php` once through setup to rename fields while preserving saved content.
+ACF layout fields match React section props directly (for example `heading` and `cards`). `sections.tsx` selects the typed component by `acf_fc_layout`. The loader validates fields and normalizes model URLs; camera formatting lives in Collection. Setup initializes new installations without running content migrations. Gallery uploads and content changes are performed on request.
 
 `setup-site-settings.php` installs the database-managed ACF options page and Page settings group once. Their existing keys and option storage are preserved; subsequent setup runs leave admin changes intact. The runtime plugin only handles editor behavior, model uploads, site-data delivery.
 
